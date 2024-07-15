@@ -1,6 +1,10 @@
 # Credit Card Fraud Detection
 
-dataset: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud/data
+## Dependencies
+
+Libraries used are likely standard.
+
+Dataset: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud/data
 
 ## Data Preprocessing
 
