@@ -58,3 +58,11 @@ Sophisticated models like XGBoost play a crucial role in this ecosystem. Their a
 A significant challenge in fraud detection is dealing with imbalanced datasets, where the number of legitimate transactions far exceeds fraudulent ones. In this project, we addressed this issue using oversampling techniques such as SMOTE and ADASYN. These methods helped balance the dataset, allowing the model to learn more effectively from the minority class and improve its recall rate.
 
 The final model was able to achieve very high results, and it is accounted for overfitting.
+
+## Conclusion
+
+Looking ahead, there are several promising avenues to explore. Incorporating more diverse datasets, including transaction data from different sources or times, could enhance the model’s generalizability. Expanding the scope to include real-time data streaming and anomaly detection could make the system more adaptive and responsive to emerging fraud patterns.
+
+## Statement of collaboration
+
+Brandon Chiou: Contributed to 100% of the project.
