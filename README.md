@@ -3,7 +3,7 @@
 ## Dependencies
 
 Libraries used are likely standard.\
-xgboost: https://xgboost.readthedocs.io/en/stable/install.html#conda\
+xgboost: https://xgboost.readthedocs.io/en/stable/install.html#conda \
 Dataset: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud/data
 
 ## Data Preprocessing
