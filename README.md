@@ -4,6 +4,7 @@
 
 Libraries used are likely standard.\
 xgboost: https://xgboost.readthedocs.io/en/stable/install.html#conda \
+imbalanced-learn (for oversampling): https://imbalanced-learn.org/stable/install.html
 Dataset: https://www.kaggle.com/datasets/dhanushnarayananr/credit-card-fraud/data
 
 ## Data Preprocessing
