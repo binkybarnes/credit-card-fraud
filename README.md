@@ -43,7 +43,14 @@ My first model is the Random Forest Classifier, an ensemble of decision trees th
 
 ## Model 2
 
-Since a decision tree model worked well, I went forward with the XGBoost model, because of its performance and efficiency. It achieved similar metrics above 0.99, however the confusion matrix showed about 250 false negatives. I then decide to employ oversampling techniques such as SMOTE and ADASYN. ADASYN brought the most increase, bringing down the false negatives to below 10.
+Since a decision tree model worked well, I went forward with the XGBoost model, because of its performance and efficiency. It achieved similar metrics above 0.99, however the confusion matrix showed about 250 false negatives. I then decide to employ oversampling techniques such as SMOTE and ADASYN. ADASYN brought the most increase, bringing down the false negatives to below 10. I also used RandomCV to tune the hyperparemeters for XGBoost.
+
+```
+xgb = XGBClassifier(min_child_weight=1, max_depth=8, learning_rate=0.25, gamma=0.1, colsample_bytree=0.5, early_stopping_rounds=2)
+xgb.fit(X_train, y_train, eval_set=[(X_test, y_test)])
+```
+
+![alt text](img6.png "Title")
 
 ## Results
 
@@ -57,7 +64,7 @@ Sophisticated models like XGBoost play a crucial role in this ecosystem. Their a
 
 A significant challenge in fraud detection is dealing with imbalanced datasets, where the number of legitimate transactions far exceeds fraudulent ones. In this project, we addressed this issue using oversampling techniques such as SMOTE and ADASYN. These methods helped balance the dataset, allowing the model to learn more effectively from the minority class and improve its recall rate.
 
-The final model was able to achieve very high results, and it is accounted for overfitting.
+The final model was able to achieve very high results (.995 recall), and it is accounted for overfitting.
 
 ## Conclusion
 
